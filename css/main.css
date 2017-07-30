@@ -1,0 +1,51 @@
+@import "other/buttons.css";
+@import "other/_answers_theme.css";
+* {
+  box-sizing: border-box;
+}
+
+.main_content__wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  clear: both;
+  background-color: #ddd;
+  border: 2px solid grey;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.main_title {
+  text-align: center;
+}
+
+.answer__options {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main_nav__and__info {
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.menu {
+  float: left;
+  width: 100px;
+}
+
+.score {
+  float: right;
+  width: calc(60% - 120px);
+  text-align: right;
+  padding-right: 20px;
+}
+.copyright_info{
+  clear: both;
+}

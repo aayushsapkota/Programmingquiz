@@ -1,0 +1,11 @@
+.wrong_warning {
+  color: #ff0033;
+}
+
+.right_answer_provided, .success {
+  color: #4bb543;
+}
+
+.right_answer_provided, .success, .wrong_warning {
+  text-align: center;
+}
