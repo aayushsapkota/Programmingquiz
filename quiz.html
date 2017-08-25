@@ -1,7 +1,7 @@
 <!-- Aayush Sapkota
 96.estd@gmail.com
- aayush@dashmedia.com.au
- s283859 -->
+aayush@dashmedia.com.au
+s283859 -->
 
 <!DOCTYPE html>
 <html>
@@ -13,15 +13,15 @@
   <link rel="stylesheet" href="js/lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
   <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <script type="text/javascript" src="js/lib/modernizr_3.5.0.js" >
+  <script type="text/javascript" src="js/lib/modernizr_3.5.0.js">
   </script>
-  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
 
   <!--
-landing page -->
+  landing page -->
   <div data-role="page" id="landing_page">
     <div data-role="header" class="header">
       <h1 class="langing_pagetitle">Programming Quiz</h1>
@@ -30,23 +30,19 @@ landing page -->
       <h2 class="main_title">Welcome to The Programming Quiz.</h2>
       <div class="button_group__wrapper">
         <a data-role="button" href="quiz.html#quiz1" class="start_button">Start</a>
-        <a data-role="button" href="#results" class="results">Previous Results</a>
+        <a class="results" data-role="button" href="#results" class="results">Previous Results</a>
       </div>
+    </div>
+    <div>
+      <p class="message"></p>
     </div>
     <div data-role="footer">
       <h2 class="copyright_info">&copy; Aayush Sapkota 2017</h2>
-
     </div>
-    <!-- <a data-transition='fade' href="#quiz1">Quiz 1</a>
-    <a data-transition='fade' href="#quiz2">Quiz 2</a>
-    <a data-transition='fade' href="#quiz3">Quiz 3</a>
-    <a data-transition='fade' href="#quiz4">Quiz 4</a>
-    <a data-transition='fade' href="#results">Results</a>
-    <a data-transition='fade' href="#wrong_answer">Wrong_answer</a>
-    <a data-transition='fade' href="#right_answer">right_answer</a> -->
-    <!--
-  quiz first page -->
   </div>
+
+  <!--
+  quiz first page -->
   <div data-role="page" id="quiz1">
     <div data-role="header">
       <h1 class="langing_pagetitle">Programming Quiz</h1>
@@ -59,12 +55,20 @@ landing page -->
       </div>
 
       <div class="main_content__wrapper">
-        <p class="question">1. What is the most for server-side database management?</p>
+        <p class="question">1. What is the most used data structure for server-side database management?</p>
         <ul class="answer__options">
-          <li><a data-role="button" href="#wrong_answer">JAVA</a></li>
-          <li><a data-role="button" href="#wrong_answer">JavaScript</a></li>
-          <li><a data-role="button" href="#right_answer">SQL</a></li>
-          <li><a data-role="button" href="#wrong_answer">PHP</a></li>
+          <li>
+            <a class="answerq1" data-role="button" href="#answer_check">JAVA</a>
+          </li>
+          <li>
+            <a class="answerq1" data-role="button" href="#answer_check">JavaScript</a>
+          </li>
+          <li>
+            <a class="answerq1" data-role="button" href="#answer_check">SQL</a>
+          </li>
+          <li>
+            <a class="answerq1" data-role="button" href="#answer_check">PHP</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -72,32 +76,9 @@ landing page -->
       <h2 class="copyright_info">&copy; Aayush Sapkota 2017</h2>
     </div>
   </div>
-  <!--
-results page -->
-  <div data-role="page" id="results">
-    <div data-role="header">
-      <h1 class="langing_pagetitle">Programming Quiz</h1>
-    </div>
-    <div data-role="main">
-      <div class="main_content__wrapper">
-        <p>1. What is the most for server-side database management?
-          <br />- SQL</p>
-        <p>2. What kind of data strcture is LIFO? <br /> - Stack</p>
-        <p>3. How many Elements are there in a complete binary tree with 4 levels? <br /> - 15</p>
-        <p>4. How to count number of sheep in farm table? <br /> - SELECT COUNT(*) FROM FARM; </p>
-        <div class="side_button">
-          <a class="" href="#quiz1" data-role="button"> New Game</a>
-          <a href="#landing_page" data-role="button"> Main menu</a>
-        </div>
-      </div>
 
-    </div>
-    <div data-role="footer">
-      <h2 class="copyright_info">&copy; Aayush Sapkota 2017</h2>
-    </div>
-  </div>
   <!--
-  quiz second page -->
+        quiz second page -->
   <div data-role="page" id="quiz2">
     <div data-role="header">
       <h1 class="langing_pagetitle">Programming Quiz</h1>
@@ -108,12 +89,20 @@ results page -->
         <p class="score">Score: 0 </p>
       </div>
       <div class="main_content__wrapper">
-        <p class="question">2. What kind of data strcture is LIFO?</p>
+        <p class="question">2. What kind of data strcture is LIFO(Last in first Out)?</p>
         <ul class="answer__options">
-          <li><a data-role="button" href="#wrong_answer_2">Array</a></li>
-          <li><a data-role="button" href="#wrong_answer_2">Queue</a></li>
-          <li><a data-role="button" href="#wrong_answer_2">Binary Tree</a></li>
-          <li><a data-role="button" href="#right_answer_2">Stack</a></li>
+          <li>
+            <a class="answerq2" data-role="button" href="#answer_check">Array</a>
+          </li>
+          <li>
+            <a class="answerq2" data-role="button" href="#answer_check">Queue</a>
+          </li>
+          <li>
+            <a class="answerq2" data-role="button" href="#answer_check">Binary Tree</a>
+          </li>
+          <li>
+            <a class="answerq2" data-role="button" href="#answer_check">Stack</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -122,7 +111,7 @@ results page -->
     </div>
   </div>
   <!--
-  quiz third page -->
+            quiz third page -->
   <div data-role="page" id="quiz3">
     <div data-role="header">
       <h1 class="langing_pagetitle">Programming Quiz</h1>
@@ -135,10 +124,19 @@ results page -->
       <div class="main_content__wrapper">
         <p class="question">3. How many Elements are there in a complete binary tree with 4 levels?</p>
         <ul class="answer__options">
-          <li><a data-role="button" href="#right_answer_3">15</a></li>
-          <li><a data-role="button" href="#wrong_answer_3">19</a></li>
-          <li><a data-role="button" href="#wrong_answer_3">8</a></li>
-          <li><a data-role="button" href="#wrong_answer_3">22</a></li>
+          <li>
+            <a class="answerq3" data-role="button" href="#answer_check">15</a>
+          </li>
+          <li>
+            <a class="answerq3" data-role="button" href="#answer_check">19</a>
+          </li>
+          <li>
+
+            <a class="answerq3" data-role="button" href="#answer_check">8</a>
+          </li>
+          <li>
+            <a class="answerq3" data-role="button" href="#answer_check">22</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -148,7 +146,7 @@ results page -->
   </div>
 
   <!--
-  quiz fourth page -->
+            quiz fourth page -->
   <div data-role="page" id="quiz4">
     <div data-role="header">
       <h1 class="langing_pagetitle">Programming Quiz</h1>
@@ -161,10 +159,18 @@ results page -->
       <div class="main_content__wrapper">
         <p class="question">4. How to count number of sheep in farm table?</p>
         <ul class="answer__options">
-          <li><a data-role="button" href="#wrong_answer_4">SELECT * FROM FARM;</a></li>
-          <li><a data-role="button" href="#wrong_answer_4">SELECT sheep FROM FARM;</a></li>
-          <li><a data-role="button" href="#right_answer_4">SELECT COUNT(*) FROM FARM;</a></li>
-          <li><a data-role="button" href="#wrong_answer_4">SELECT COUNT() FROM FARM;</a></li>
+          <li>
+            <a class="answerq4" data-role="button" href="#final_page">SELECT * FROM FARM;</a>
+          </li>
+          <li>
+            <a class="answerq4" data-role="button" href="#final_page">SELECT sheep FROM FARM;</a>
+          </li>
+          <li>
+            <a class="answerq4" data-role="button" href="#final_page">SELECT COUNT(*) FROM FARM;</a>
+          </li>
+          <li>
+            <a class="answerq4" data-role="button" href="#final_page">SELECT COUNT() FROM FARM;</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -174,17 +180,17 @@ results page -->
   </div>
 
   <!--
-  Quiz Final page -->
+            Quiz Final page -->
   <div data-role="page" id="final_page">
     <div data-role="header">
       <h1 class="langing_pagetitle">Programming Quiz</h1>
     </div>
     <div data-role="main " class="main_content__wrapper">
-      <p class="final_message">Yay! you have answered everything correctly.</p>
-      <p class="final_message">Or You have scored 3, 2, 1, 0. Try Again</p>
+      <p class="final_message"></p>
+      <p class="final_message--score"></p>
 
       <div class="button_group__wrapper">
-        <a data-role="button" href="#quiz1">Try Again</a>
+        <a class="try_again" data-role="button" href="#quiz1">Try Again</a>
         <a data-role="button" href="#landing_page">Menu</a>
       </div>
     </div>
@@ -193,21 +199,20 @@ results page -->
     </div>
   </div>
 
-  <!--
-  wrong answer 1 page -->
-  <div data-role="page" id="wrong_answer">
+  <!--answer check page -->
+  <div data-role="page" id="answer_check">
     <div data-role="header">
       <h1 class="langing_pagetitle">Programming Quiz</h1>
     </div>
     <div data-role="main ">
       <div class="main_nav__and__info">
         <a href="#landing_page" data-role="button" data-icon="bars" class="menu">Menu</a>
-        <p class="score">Score: 0 </p>
+        <p id="score" class="score">Score: 0 </p>
       </div>
       <div class="main_content__wrapper">
-        <p class="wrong_warning">You have choosen wrong answer! </p>
-        <p class="right_answer_provided">The correct answer is SQL.</p>
-        <div class="button_group__wrapper"><a data-role="button" href="#quiz2">Next Question</a></div>
+        <p class="answer_check"> </p>
+        <p class="answer_provided"></p>
+        <div class="button_group__wrapper"><a class="next_button" data-role="button" href="#quiz2">Next Question</a></div>
       </div>
     </div>
     <div data-role="footer">
@@ -216,160 +221,37 @@ results page -->
   </div>
 
   <!--
-  wrong answer 2 page -->
-  <div data-role="page" id="wrong_answer_2">
+  results page -->
+  <div data-role="page" id="results">
     <div data-role="header">
       <h1 class="langing_pagetitle">Programming Quiz</h1>
     </div>
-    <div data-role="main ">
-      <div class="main_nav__and__info">
-        <a href="#landing_page" data-role="button" data-icon="bars" class="menu">Menu</a>
-        <p class="score">Score: 0 </p>
-      </div>
+    <div data-role="main">
       <div class="main_content__wrapper">
-        <p class="wrong_warning">You have choosen wrong answer! </p>
-        <p class="right_answer_provided">The correct answer is Stack.</p>
-
-        <div class="button_group__wrapper">
-          <a data-role="button" href="#quiz3">Next Question</a>
+      <p class="question1"></p>
+      <p class="answer1"> - No, previous record game found.</p>
+      <p class="question2"></p>
+      <p class="answer2"> - No, previous record game found.</p>
+      <p class="question3"></p>
+      <p class="answer3"> - No, previous record game found.</p>
+      <p class="question4"></p>
+      <p class="answer4"> - No, previous record game found.</p>
+        <div class="side_button">
+          <a class="start_button" href="#quiz1" data-role="button"> New Game</a>
+          <a href="#landing_page" data-role="button"> Main menu</a>
         </div>
       </div>
+
     </div>
     <div data-role="footer">
       <h2 class="copyright_info">&copy; Aayush Sapkota 2017</h2>
     </div>
   </div>
 
-  <!--
-  wrong answer 3 page -->
-  <div data-role="page" id="wrong_answer_3">
-    <div data-role="header">
-      <h1 class="langing_pagetitle">Programming Quiz</h1>
-    </div>
-    <div data-role="main ">
-      <div class="main_nav__and__info">
-        <a href="#landing_page" data-role="button" data-icon="bars" class="menu">Menu</a>
-        <p class="score">Score: 0 </p>
-      </div>
-      <div class="main_content__wrapper">
-        <p class="wrong_warning">You have choosen wrong answer! </p>
-        <p class="right_answer_provided">The correct answer is "15".</p>
-        <div class="button_group__wrapper"><a data-role="button" href="#quiz4">Next Question</a></div>
-      </div>
-    </div>
-    <div data-role="footer">
-      <h2 class="copyright_info">&copy; Aayush Sapkota 2017</h2>
-    </div>
-  </div>
+  <script type="text/javascript" src="js/main/local_storage.js"></script>
 
-  <!--
-  wrong answer 4 page -->
-  <div data-role="page" id="wrong_answer_4">
-    <div data-role="header">
-      <h1 class="langing_pagetitle">Programming Quiz</h1>
-    </div>
-    <div data-role="main ">
-      <div class="main_nav__and__info">
-        <a href="#landing_page" data-role="button" data-icon="bars" class="menu">Menu</a>
-        <p class="score">Score: 0 </p>
-      </div>
-      <div class="main_content__wrapper">
-        <p class="wrong_warning">You have choosen wrong answer! </p>
-        <p class="right_answer_provided">The correct answer "SELECT COUNT(*) FROM FARM;".</p>
-        <div class="button_group__wrapper"><a data-role="button" href="#final_page">See Score</a></div>
-      </div>
-    </div>
-    <div data-role="footer">
-      <h2 class="copyright_info">&copy; Aayush Sapkota 2017</h2>
-    </div>
-  </div>
+  </script>
 
-  <!--
-  right answer 1 page -->
-  <div data-role="page" id="right_answer">
-    <div data-role="header">
-      <h1 class="langing_pagetitle">Programming Quiz</h1>
-    </div>
-    <div data-role="main">
-      <div class="main_nav__and__info">
-        <a href="#landing_page" data-role="button" data-icon="bars" class="menu">Menu</a>
-        <p class="score">Score: 0 </p>
-      </div>
-      <div class="main_content__wrapper">
-        <p class="success">YAY! You have answered the Question correctly.</p>
-        <div class="button_group__wrapper"><a data-role="button" href="#quiz2">Next Question</a></div>
-      </div>
-    </div>
-    <div data-role="footer">
-      <h2 class="copyright_info">&copy; Aayush Sapkota 2017</h2>
-    </div>
-  </div>
-
-  <!--
-  right answer 2 page -->
-  <div data-role="page" id="right_answer_2">
-    <div data-role="header">
-      <h1 class="langing_pagetitle">Programming Quiz</h1>
-    </div>
-    <div data-role="main">
-      <div class="main_nav__and__info">
-        <a href="#landing_page" data-role="button" data-icon="bars" class="menu">Menu</a>
-        <p class="score">Score: 0 </p>
-      </div>
-      <div class="main_content__wrapper">
-        <p class="success">YAY! You have answered the Question correctly.</p>
-        <div class="button_group__wrapper"><a data-role="button" href="#quiz3">Next Question</a></div>
-      </div>
-    </div>
-    <div data-role="footer">
-      <h2 class="copyright_info">&copy; Aayush Sapkota 2017</h2>
-    </div>
-  </div>
-
-  <!--
-  right answer 3 page -->
-  <div data-role="page" id="right_answer_3">
-    <div data-role="header">
-      <h1 class="langing_pagetitle">Programming Quiz</h1>
-    </div>
-    <div data-role="main">
-      <div class="main_nav__and__info">
-        <a href="#landing_page" data-role="button" data-icon="bars" class="menu">Menu</a>
-        <p class="score">Score: 0 </p>
-      </div>
-      <div class="main_content__wrapper">
-        <p class="success">YAY! You have answered the Question correctly.</p>
-        <div class="button_group__wrapper"><a data-role="button" href="#quiz4"> Next Question</a></div>
-      </div>
-    </div>
-    <div data-role="footer">
-      <h2 class="copyright_info">&copy; Aayush Sapkota 2017</h2>
-    </div>
-  </div>
-
-  <!--
-  right answer 4 page -->
-  <div data-role="page" id="right_answer_4">
-    <div data-role="header">
-      <h1 class="langing_pagetitle">Programming Quiz</h1>
-    </div>
-    <div data-role="main">
-      <div class="main_nav__and__info">
-        <a href="#landing_page" data-role="button" data-icon="bars" class="menu">Menu</a>
-        <p class="score">Score: 0 </p>
-      </div>
-      <div class="main_content__wrapper">
-        <p class="success">YAY! You have answered the Question correctly.</p>
-        <div class="button_group__wrapper"><a data-role="button" href="#final_page">See score</a></div>
-      </div>
-    </div>
-    <div data-role="footer">
-      <h2 class="copyright_info">&copy; Aayush Sapkota 2017</h2>
-    </div>
-  </div>
-<script type="text/javascript" src="js/main/local_storage.js">
-
-</script>
 </body>
 
 </html>

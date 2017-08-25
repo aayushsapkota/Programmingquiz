@@ -1,11 +1,23 @@
-.wrong_warning {
-  color: #ff0033;
+*{
+  color: #3c2f2f;
 }
 
-.right_answer_provided, .success {
-  color: #4bb543;
+.answer_check,
+.final_message{
+  color: #a93f3b;
 }
 
-.right_answer_provided, .success, .wrong_warning {
+.answer_provided,
+.final_message--score,
+ .main_title{
+color: #0c96a2;
+  font-weight: bold;
+}
+
+.answer_provided,
+.answer_check,
+.final_message--score,
+.final_message
+ {
   text-align: center;
 }
